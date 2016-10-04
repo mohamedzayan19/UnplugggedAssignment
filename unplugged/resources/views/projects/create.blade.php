@@ -31,10 +31,76 @@
 
        
 
+
+         <label for="task-name" class="col-sm-4 control-label">Project start date</label>
+
+           <div class="col-sm-6">
+                <input type="date" name="start" id="start" class="form-control">
+            </div>
+
+        <label for="task-name" class="col-sm-4 control-label">Project end date</label>
+
+              <div class="col-sm-6">
+                <input type="date" name="end" id="end" class="form-control">
+            </div>
+
+            <label for="task-name" class="col-sm-4 control-label">Phase1 name</label>
+
+            <div class="col-sm-6">
+                <input type="text" name="phase1Title" id="task-name" class="form-control">
+            </div>
+       <label for="task-name" class="col-sm-4 control-label">Phase1 start date</label>
+
+           <div class="col-sm-6">
+                <input type="date" name="phase1Start" id="start" class="form-control">
+            </div>
+
+        <label for="task-name" class="col-sm-4 control-label">Phase1 end date</label>
+
+              <div class="col-sm-6">
+                <input type="date" name="phase1End" id="end" class="form-control">
+            </div>
+
+        <label for="task-name" class="col-sm-4 control-label">Phase2 name</label>
+
+            <div class="col-sm-6">
+                <input type="text" name="phase2Title" id="task-name" class="form-control">
+            </div>
+
+        <label for="task-name" class="col-sm-4 control-label">Phase2 start date</label>
+
+           <div class="col-sm-6">
+                <input type="date" name="phase2Start" id="start" class="form-control">
+            </div>
+
+        <label for="task-name" class="col-sm-4 control-label">Phase2 end date</label>
+
+              <div class="col-sm-6">
+                <input type="date" name="phase2End" id="end" class="form-control">
+            </div>
+
+
+            <label for="task-name" class="col-sm-4 control-label">Phase3 name</label>
+
+            <div class="col-sm-6">
+                <input type="text" name="phase3Title" id="task-name" class="form-control">
+            </div>
+
+       <label for="task-name" class="col-sm-4 control-label">Phase3 start date</label>
+
+           <div class="col-sm-6">
+                <input type="date" name="phase3Start" id="start" class="form-control">
+            </div>
+
+        <label for="task-name" class="col-sm-4 control-label">Phase3 end date</label>
+
+              <div class="col-sm-6">
+                <input type="date" name="phase3End" id="end" class="form-control">
+            </div>
+
             <div class="col-sm-6">
                 <input type="hidden" name="user_id" id="task-name" class="form-control" value="{{$user->id}}">
             </div>
-
  
         </div> 
 

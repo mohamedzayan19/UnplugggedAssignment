@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Project extends Model implements \MaddHatter\LaravelFullcalendar\IdentifiableEvent
+class Phase extends Model implements \MaddHatter\LaravelFullcalendar\Event
 {
 	 protected $dates = ['start', 'end'];
 
@@ -69,14 +69,9 @@ class Project extends Model implements \MaddHatter\LaravelFullcalendar\Identifia
             //etc
         ];
     }   
-
-    public function user()
+    
+    public function Project()
     {
-        return $this->belongsTo('App\User');
-    }
-
-    public function phases()
-    {
-        return $this->hasMany('App\Phase');
+        return $this->belongsTo('App\Project');
     }
 }

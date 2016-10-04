@@ -26,3 +26,5 @@ Route::resource('users','UsersController');
 Route::resource('projects','ProjectsController');
 Route::get('/redirect', 'FacebookController@redirect');
 Route::get('/callback', 'FacebookController@callback');
+Route::get('/calendar', 'CalendarController@show');
+Route::put('/projectsupdate/{projects}', 'ProjectsController@updateTime');
