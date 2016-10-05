@@ -10,6 +10,7 @@ use App\Project;
 use App\Phase;
 use App\User;
 use Illuminate\Support\Facades\Log;
+use Search;
 class ProjectsController extends Controller
 {
     //
@@ -49,6 +50,9 @@ class ProjectsController extends Controller
         $phase3->end = $request->phase3End;
         $phase3->project_id =$project->id;
         $phase3->save();
+        Search::insert('project'.$project->id, array(
+        'title' => $request->title,
+        ));
         return redirect(action('HomeController@index'));
     }
 

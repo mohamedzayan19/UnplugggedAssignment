@@ -148,8 +148,9 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
         'Collective\Html\HtmlServiceProvider',
-        Laravel\Socialite\SocialiteServiceProvider::class,
         'MaddHatter\LaravelFullcalendar\ServiceProvider',
+        'Mmanos\Search\SearchServiceProvider',
+        Laravel\Socialite\SocialiteServiceProvider::class,
         /*
          * Application Service Providers...
          */
@@ -206,6 +207,7 @@ return [
         'Form' => 'Collective\Html\FormFacade',
         'Html' => 'Collective\Html\HtmlFacade',
         'Calendar' => 'MaddHatter\LaravelFullcalendar\Facades\Calendar',
+        'Search' => 'Mmanos\Search\Facade',
         'Socialite' => Laravel\Socialite\Facades\Socialite::class
         
 

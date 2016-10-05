@@ -30,3 +30,4 @@ Route::get('/calendar', 'CalendarController@show');
 Route::put('/projectsupdate/{projects}', 'ProjectsController@updateTime');
 Route::get('/holidays/create', 'HolidaysController@create');
 Route::post('/holidays', 'HolidaysController@store');
+Route::post('/search', 'SearchController@search');

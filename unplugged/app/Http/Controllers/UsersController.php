@@ -10,6 +10,7 @@ use Auth;
 use Illuminate\Support\Facades\Log;
 use App\Http\Requests\CreateUserRequest;
 use Hash;
+use Search;
 class UsersController extends Controller
 {
     public function __construct()
@@ -30,7 +31,9 @@ class UsersController extends Controller
         $user->email = $request->email;
         $user->password =Hash::make($request->password); 
         $user->save();
-
+        Search::insert('user'.$user->id, array(
+        'title' => $request->name,
+        ));
         return redirect()->action('HomeController@index');
     }
 
