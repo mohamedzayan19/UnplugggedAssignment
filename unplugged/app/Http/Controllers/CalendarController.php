@@ -55,21 +55,21 @@ class CalendarController extends Controller
     	}
     }
 
-#    $holidays = Holiday::all();
- #   foreach($holidays as $holiday){
-  #  	    $events[] = \Calendar::event(
-	#	    'Holiday', //event title
-	#	    true, //full day event?
-	#	    $holiday->start, //start time (you can also use Carbon instead of DateTime)
-	#	    $holiday->end,
-	#	    'holiday',
-	#	        [
+    $holidays = Holiday::all();
+    foreach($holidays as $holiday){
+    	    $events[] = \Calendar::event(
+		    $holiday->title, //event title
+		    true, //full day event?
+		    $holiday->start, //start time (you can also use Carbon instead of DateTime)
+		    $holiday->end,
+		    'holiday',
+		        [
 		        
-     #   			'color' => '#999',
+        			'color' => '#999',
        
-    #			]  //optionally, you can specify an event ID
-	#	);
-    #}
+    			]  //optionally, you can specify an event ID
+		);
+    }
 
 	    $eloquentEvent = $project;
 		$calendar = \Calendar::addEvents($events)

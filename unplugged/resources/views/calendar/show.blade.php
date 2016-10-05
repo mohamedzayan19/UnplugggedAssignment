@@ -13,6 +13,9 @@
 </head>
 <body>
 	<meta name="_token" content="{!! csrf_token() !!}" />
+    @if(Auth::user()->isAdministrator())
+    <a href="/holidays/create">Create holiday</a>
+    @endif
     {!! $calendar->calendar() !!}
     {!! $calendar->script() !!}
 </body>
