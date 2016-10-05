@@ -13,8 +13,9 @@
 </head>
 <body>
 	<meta name="_token" content="{!! csrf_token() !!}" />
-    @if(Auth::user()->isAdministrator())
     <a href="/holidays/create">Create holiday</a>
+    @if(Auth::user()->isAdministrator())
+    <a href="{{action("HomeController@index")}}">Home</a>
     @endif
     {!! $calendar->calendar() !!}
     {!! $calendar->script() !!}

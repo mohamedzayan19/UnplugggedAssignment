@@ -67,7 +67,7 @@ class ProjectsController extends Controller
             ->with('project', $project);
     }
 
-    public function update(CreateProjectRequest $request, $projects)
+    public function update(Request $request, $projects)
     { 
         $project = Project::find($projects);
         $project->title = $request->title;

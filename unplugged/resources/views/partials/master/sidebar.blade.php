@@ -48,6 +48,8 @@
                 <li><a href="{{action("UsersController@create")}}"><i class="fa fa-user-plus"></i> <span>Add new User</span></a>
                 </li>
             @endif
+                            <li><a href="{{action("CalendarController@show")}}"><i class="fa fa-user-plus"></i> <span>Calendar</span></a>
+                </li>
         </ul>
     </section>
     <!-- /.sidebar -->
