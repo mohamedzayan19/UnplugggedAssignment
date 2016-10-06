@@ -60,7 +60,7 @@ class CreateProjectRequest extends Request
             'description' => ['required','min:3','max:15'],
             'start' => ['required'],
             'end' => ['required','after:'.$start],
-            'phase2Title' => ['required'],
+            'phase1Title' => ['required'],
             'phase1Start' => ['required','after:'.$start,'before:'.$end],
 
             'phase1End' => ['required','after:'.$start,'before:'.$end,
